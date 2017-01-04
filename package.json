@@ -3,6 +3,10 @@
   "version": "0.0.1",
   "description": "play with electron",
   "main": "application/main.js",
+  "engines" : { 
+    "node" : ">=6.9.3",
+    "npm" : ">=3.10.9"
+  },
   "scripts": {
     "build": "browserify client/browser.js -t babelify -o build/renderer.js",
     "watch": "watchify client/browser.js -t babelify -o build/renderer.js --debug --verbose",
